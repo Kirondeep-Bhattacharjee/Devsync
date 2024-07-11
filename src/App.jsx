@@ -11,6 +11,7 @@ import { checkIsLoggedIn } from "./redux/actionCreators/authActionCreator";
 
 const App = () => {
     const dispatch = useDispatch();
+    console.log("process.env.REACT_APP_SERVER_SECRET", process.env.REACT_APP_SERVER_SECRET);
 
     useEffect(() => {
         dispatch(checkIsLoggedIn());
